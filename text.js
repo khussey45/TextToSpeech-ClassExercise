@@ -1,16 +1,18 @@
 // text to speech from user input
 
 
-const fs = require('fs');
-const path = require('path');
-const OpenAI = require('openai');
+const fs = require('fs'); // imports file system module
+const path = require('path'); // provides utilities working with files & directories
+const OpenAI = require('openai'); // imports openai module
 
-require('dotenv').config();
+require('dotenv').config(); //imports the .env module 
 
-const openai = new OpenAI(process.env.OPENAI_API_KEY);
+const openai = new OpenAI(process.env.OPENAI_API_KEY); // where the api key is initialized 
 
-const speechFile = path.resolve('./speech.mp3');
+const speechFile = path.resolve('./speech.mp3'); // creates the path for  the mp3 file 
 
+
+// created main function that converts the text input into an mp3 file of a speech version 
 async function main() {
   const mp3 = await openai.audio.speech.create({
     model: "tts-1",

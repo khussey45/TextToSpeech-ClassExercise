@@ -1,8 +1,10 @@
 // Creating a random generated story based on the prompt the user creates at the bottom
 
-require('dotenv').config();
-const axios = require('axios');
+require('dotenv').config();  //imports the .env module 
+const axios = require('axios'); // imports axios module to enable http requests for openai api
 
+
+// Story generate function that uses openai trained models to create a story based on a prompt
 async function generateStory(prompt) {
     const headers = {
         'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
