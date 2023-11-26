@@ -28,10 +28,14 @@ To run this project, follow these steps:
     ```sh
     npm install dotenv axios openai pdf-parse
 
-3. **Run APP:**
+3. **Create a .env file:**
+    ```sh
+   In the  .env enter the api key  provided or generate your own at openai website 
+
+4. **Run APP:**
     ```sh
     node [filename].js
 
-4. **Listen to MP3:**
+5. **Listen to MP3:**
     ```sh
     play the speech.mp3 file 
