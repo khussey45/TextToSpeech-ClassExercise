@@ -30,7 +30,7 @@ To run this project, follow these steps:
 
 3. **Create a .env file:**
     ```sh
-   In the  .env enter the api key  provided or generate your own at openai website 
+   In the  .env enter the api key  provided or generate your own at openai website https://openai.com/
 
 4. **Run APP:**
     ```sh
