@@ -1,3 +1,5 @@
+// Creating a random generated story based on the prompt the user creates at the bottom
+
 require('dotenv').config();
 const axios = require('axios');
 
@@ -8,7 +10,7 @@ async function generateStory(prompt) {
     };
 
     const data = {
-        model: "text-davinci-003", // or "gpt-4" depending on availability
+        model: "text-davinci-003", 
         prompt: prompt,
         max_tokens: 500
     };

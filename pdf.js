@@ -1,3 +1,6 @@
+// Converting a pdf (under 4096 characters) to speech mp3 file
+
+
 const fs = require('fs');
 const path = require('path');
 const OpenAI = require('openai');
