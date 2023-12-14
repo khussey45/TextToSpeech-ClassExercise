@@ -10,7 +10,7 @@ require('dotenv').config(); //imports the .env module
 
 const openai = new OpenAI(process.env.OPENAI_API_KEY);  // where the api key is initialized 
 
-const pdfFilePath = path.resolve('./altman.pdf'); // reads the pdf the user inputs
+const pdfFilePath = path.resolve('./agi.pdf'); // reads the pdf the user inputs
 
 const speechFile = path.resolve('./speech2.mp3'); // creates the path for  the mp3 file 
 
